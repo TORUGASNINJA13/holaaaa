@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0, 233, 31);
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgb(12, 73, 109);
+    margin: 40px;
+    
+}
+
+.card .content {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background: #fc0000;
+    grid-template-columns: 50% 25% 65%; 
+}
+
+.card .content .img {
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.card .content .img img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgb(255, 0, 170);
+    
+}
+
+.card .content span {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(to right, #04f791, #afee00);
+    transform: rotate(-35deg);
+    top: -50px;
+    left: -100px;
+
+}
+
+.card .content h3 {
+    font-size: 18px;
+    color: #b63ba6;
+    margin-bottom: 5px;
+}
+
+.card .content h4 {
+    font-size: 18px;
+    color: #1e1bbd;
+    margin-bottom: 5px;
+}
+
+.card .content h6 {
+    font-size: 13px;
+    color: #230855;
+}
+
+.card .links {
+    position: absolute;
+    z-index: 90;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgb(255, 255, 255, 0.5);
+    box-shadow: 2px 3px 5px rgb(73, 69, 52, 0.4);
+    padding: 20px;
+    align-items: center;
+    right: 10px;
+    top: 15px;
+    transition: .5s;
+}
+
+.card:hover .links {
+    right: -50px;
+    border-radius: 0 10px 10px 0;
+} 
+
+.card .links a{
+    font-size: 20px;
+    color: #646069;
+}
+
+.card .links a:nth-child(1):hover{
+    color: #441e1e;
+}
+
+.card .links a:nth-child(2):hover{
+    color: #9900ff;
+}
+
+.card .links a:nth-child(3):hover{
+    color: #fbff00;
+}
+
+.card .links a:nth-child(4):hover{
+    color: #05ff65
+}
+
+.card .links a:nth-child(5):hover{
+    color: #03dffc
+}
+body { font-family: Arial, sans-serif; 
+    background-color: #7e1478;
+     padding: 20px; } h1 { margin-top: 0; text-align: center; } form { background-color: #76da72; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin-bottom: 20px; } input[type="number"] { width: 100%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px; } select { width: 100%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 10px; } button[type="submit"] { background-color: #7db6c7; color: #000000; padding: 10px; border: none; border-radius: 5px; cursor: pointer; } .resultado { background-color: #4279b8; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2); text-align: center; font-size: 24px; }

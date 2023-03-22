@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE LAS TORTUGAS NINJA</title>
+    <link rel="stylesheet" href="estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <h1>PRESENTACIÓN</h1>
+        <div id=""caja1></div>
+    </div>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <form id="calculadora" onsubmit="return false;">
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" name="numero1">
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" name="numero2">
+        <label for="operacion">Operación:</label>
+        <select id="operacion" name="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select>
+        <button type="submit" onclick="calcular()">Calcular</button>
+    </form>
+    <div id="resultado" class="resultado"></div>
+    <script>
+        function calcular() {
+            var numero1 = document.getElementById("numero1").value;
+            var numero2 = document.getElementById("numero2").value;
+            var operacion = document.getElementById("operacion").value;
+            var resultado = 0;
+            switch (operacion) {
+                case "suma":
+                    resultado = Number(numero1) + Number(numero2);
+                    break;
+                case "resta":
+                    resultado = numero1 - numero2;
+                    break;
+                case "multiplicacion":
+                    resultado = numero1 * numero2;
+                    break;
+                case "division":
+                    resultado = numero1 / numero2;
+                    break;
+            }
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+
+    <div class="card">
+        <div class= "content">
+            <span></span>
+            <div class= "img">
+                <img src="./img/mateo.jpg" alt="">
+            </div>
+            <h3>Mateo Cortes Infante</h3>
+            <h4>Estudiante</h4>
+            <h6>Numero Telefono: 3042920595</h6>
+            <h6>Correo Institucional: fcortesi@inemkennedy.edu.co</h6>
+            <h6>Instagram: mateo6777</h6>
+            <h6>Facebook: Mateo Cortes</h6>
+            <h6>Whatsapp: 3042920595</h6>
+        </div>
+        <div class="links">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+         
+    </div>
+    <div class="card">
+        <div class= "content">
+            <span></span>
+            <div class= "img">
+                <img src="./img/lara.jpg" alt="">
+            </div>
+            <h3>David vargas Lara</h3>
+            <h4>Estudiante</h4>
+            <h6>Numero Telefono: 3123542192</h6>
+            <h6>Correo Institucional: davargasl@inemkennedy.edu.co</h6>
+            <h6>Instagram: No tiene</h6>
+            <h6>Facebook: Vargas Lara</h6>
+            <h6>Whatsapp: 3054633803</h6>
+        </div>
+        <div class="card">
+            <div class= "content">
+                <span></span>
+                <div class= "img">
+                    <img src="./img/jesus.jpg" alt="">
+                </div>
+                <h3>Jesus Manuel Monroy</h3>
+                <h4>Estudiante</h4>
+                <h6>Numero Telefono: 3042920595</h6>
+                <h6>Correo Institucional:jmonroyi@inemkennedy.edu.co</h6>
+                <h6>Instagram: no tiene</h6>
+                <h6>Facebook: Jesus Monroy</h6>
+                <h6>Whatsapp: 3115396359</h6>
+            </div>
+            <div class="links">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+             
+        </div>
+        <div class="card">
+            <div class= "content">
+                <span></span>
+                <div class= "img">
+                    <img src="./img/deiby.jpg" alt="">
+                </div>
+                <h3>Deiby Vargas Lara</h3>
+                <h4>Estudiante</h4>
+                <h6>Numero Telefono: 3126279763</h6>
+                <h6>Correo Institucional: dgaviriass@inemkennedy.edu.co
+                <h6>Instagram: NO TIENE</h6>
+                <h6>Facebook: DEIBYY SISA</h6>
+                <h6>Whatsapp: 3021748293</h6>
+            </div>
+            <div class="links">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+             
+        </div>
+        <div class="links">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+         
+    </div>
+        
